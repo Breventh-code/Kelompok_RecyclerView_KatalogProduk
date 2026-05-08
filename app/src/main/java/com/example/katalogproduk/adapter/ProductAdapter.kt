@@ -60,7 +60,10 @@ class ProductAdapter(
 
         holder.txtName.text = product.name
 
-        holder.txtPrice.text = "Rp ${product.price}"
+        // format harga rupiah
+        holder.txtPrice.text =
+            "Rp %,.0f".format(product.price)
+                .replace(",", ".")
 
         holder.ratingBar.rating = product.rating
 

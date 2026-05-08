@@ -7,17 +7,21 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btnAdd"
+    <Space
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tambah Produk"/>
+        android:layout_height="27dp" />
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:queryHint="Cari produk..."/>
+        android:queryHint="Cari produk..." />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah Produk"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
